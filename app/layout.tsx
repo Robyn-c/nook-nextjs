@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Quicksand } from "next/font/google";
 import "./globals.css";
-import Sidebar from "./(home)/_components/sidebar";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -26,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quicksand.className} ${roboto.className}`}>
-        {children}
-      </body>
+        <body className={`${quicksand.className} ${roboto.className}`}>
+          {children}
+        </body>
     </html>
   );
 }
