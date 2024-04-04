@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html,
 body,
 :root {
@@ -19,11 +21,11 @@ body,
 
 
 h1, h2, h3, h4 {
-  font-family: var(--font-roboto);
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: var(--font-quicksand);
+  font-family: "Inter", sans-serif;
 }
 
 
@@ -40,5 +42,132 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --text-50: 24 20% 95%;
+    --text-100: 27 22% 90%;
+    --text-200: 27 20% 80%;
+    --text-300: 27 20% 70%;
+    --text-400: 28 20% 60%;
+    --text-500: 28 20% 50%;
+    --text-600: 28 20% 40%;
+    --text-700: 27 20% 30%;
+    --text-800: 27 20% 20%;
+    --text-900: 27 22% 10%;
+    --text-950: 36 20% 5%;
+    
+    --background-50: 20 12% 95%;
+    --background-100: 36 10% 90%;
+    --background-200: 30 10% 80%;
+    --background-300: 32 10% 70%;
+    --background-400: 30 10% 60%;
+    --background-500: 31 10% 50%;
+    --background-600: 30 10% 40%;
+    --background-700: 32 10% 30%;
+    --background-800: 30 10% 20%;
+    --background-900: 36 10% 10%;
+    --background-950: 40 12% 5%;
+    
+    --primary-50: 30 38% 95%;
+    --primary-100: 25 37% 90%;
+    --primary-200: 25 37% 80%;
+    --primary-300: 26 39% 70%;
+    --primary-400: 26 38% 60%;
+    --primary-500: 26 38% 50%;
+    --primary-600: 26 38% 40%;
+    --primary-700: 26 39% 30%;
+    --primary-800: 25 37% 20%;
+    --primary-900: 25 37% 10%;
+    --primary-950: 24 38% 5%;
+    
+    --secondary-50: 197 28% 95%;
+    --secondary-100: 198 25% 90%;
+    --secondary-200: 198 25% 80%;
+    --secondary-300: 198 25% 70%;
+    --secondary-400: 198 26% 60%;
+    --secondary-500: 198 26% 50%;
+    --secondary-600: 198 26% 40%;
+    --secondary-700: 198 25% 30%;
+    --secondary-800: 198 25% 20%;
+    --secondary-900: 198 25% 10%;
+    --secondary-950: 197 28% 5%;
+    
+    --accent-50: 24 20% 95%;
+    --accent-100: 27 22% 90%;
+    --accent-200: 27 20% 80%;
+    --accent-300: 27 20% 70%;
+    --accent-400: 28 20% 60%;
+    --accent-500: 28 20% 50%;
+    --accent-600: 28 20% 40%;
+    --accent-700: 27 20% 30%;
+    --accent-800: 27 20% 20%;
+    --accent-900: 27 22% 10%;
+    --accent-950: 36 20% 5%;
+    
+  }
+  .dark {
+    --text-50: 36 20% 5%;
+    --text-100: 27 22% 10%;
+    --text-200: 27 20% 20%;
+    --text-300: 27 20% 30%;
+    --text-400: 28 20% 40%;
+    --text-500: 28 20% 50%;
+    --text-600: 28 20% 60%;
+    --text-700: 27 20% 70%;
+    --text-800: 27 20% 80%;
+    --text-900: 27 22% 90%;
+    --text-950: 24 20% 95%;
+    
+    --background-50: 40 12% 5%;
+    --background-100: 36 10% 10%;
+    --background-200: 30 12% 20%;
+    --background-300: 32 11% 30%;
+    --background-400: 30 11% 40%;
+    --background-500: 31 11% 50%;
+    --background-600: 30 11% 60%;
+    --background-700: 32 11% 70%;
+    --background-800: 30 12% 80%;
+    --background-900: 36 10% 90%;
+    --background-950: 20 12% 95%;
+    
+    --primary-50: 24 38% 5%;
+    --primary-100: 25 37% 10%;
+    --primary-200: 25 37% 20%;
+    --primary-300: 26 39% 30%;
+    --primary-400: 26 38% 40%;
+    --primary-500: 26 38% 50%;
+    --primary-600: 26 38% 60%;
+    --primary-700: 26 39% 70%;
+    --primary-800: 25 37% 80%;
+    --primary-900: 25 37% 90%;
+    --primary-950: 30 38% 95%;
+    
+    --secondary-50: 197 28% 5%;
+    --secondary-100: 198 25% 10%;
+    --secondary-200: 199 27% 20%;
+    --secondary-300: 199 27% 30%;
+    --secondary-400: 199 27% 40%;
+    --secondary-500: 199 27% 50%;
+    --secondary-600: 199 27% 60%;
+    --secondary-700: 199 27% 70%;
+    --secondary-800: 199 27% 80%;
+    --secondary-900: 198 25% 90%;
+    --secondary-950: 197 28% 95%;
+    
+    --accent-50: 36 20% 5%;
+    --accent-100: 27 22% 10%;
+    --accent-200: 30 20% 20%;
+    --accent-300: 29 20% 30%;
+    --accent-400: 28 20% 40%;
+    --accent-500: 29 20% 50%;
+    --accent-600: 28 20% 60%;
+    --accent-700: 29 20% 70%;
+    --accent-800: 30 20% 80%;
+    --accent-900: 27 22% 90%;
+    --accent-950: 24 20% 95%;
+    
   }
 }

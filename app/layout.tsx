@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Roboto, Quicksand } from "next/font/google";
+import { Roboto_Slab, Quicksand } from "next/font/google";
 import "./globals.css";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-roboto"
-});
-
-const quicksand = Quicksand({
-  subsets: ["latin"],
-  variable: "--font-quicksand"
-})
 
 export const metadata: Metadata = {
   title: "Nook",
@@ -25,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body className={`${quicksand.className} ${roboto.className}`}>
+        <body>
           {children}
         </body>
     </html>
