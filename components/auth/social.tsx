@@ -14,7 +14,7 @@ export default function Social() {
         variant='secondary'
         onClick={() => {}}
       >
-        <FaGoogle className='h-5 w-5 text-accent-300'/>
+        <FaGoogle className='h-5 w-5 text-accent-200'/>
       </Button>
       <Button
         size='lg'
@@ -22,7 +22,7 @@ export default function Social() {
         variant='secondary'
         onClick={() => {}}
       >
-        <FaGithub className='h-6 w-6 text-accent-300'/>
+        <FaGithub className='h-6 w-6 text-accent-200'/>
       </Button>
     </div>
   )
