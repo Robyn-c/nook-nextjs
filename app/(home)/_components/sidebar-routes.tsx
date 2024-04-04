@@ -1,11 +1,9 @@
 "use client"
 import React from 'react'
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import { Home, Search, User } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
 import SidebarItem from './sidebar-item';
 
 export default function SidebarRoutes() {
@@ -34,7 +32,7 @@ export default function SidebarRoutes() {
   ]
 
   return (
-    <nav className="flex flex-col text-2xl font-medium gap-6">
+    <nav className="flex flex-col text-2xl item font-medium gap-6">
       {routes.map((route) => (
         <SidebarItem
           key={route.href}
@@ -43,7 +41,6 @@ export default function SidebarRoutes() {
           icon={route.icon}
           active={route.active}
         />
-
       ))}
     </nav>
   )
