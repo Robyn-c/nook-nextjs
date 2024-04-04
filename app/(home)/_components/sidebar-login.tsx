@@ -6,7 +6,7 @@ import { CircleUser } from 'lucide-react'
 export default function SidebarLogin() {
   return (
     <LoginButton>
-      <div className="flex items-center gap-2 text-2xl">
+      <div className="flex items-center gap-4 text-2xl">
         <CircleUser/>
         Sign In
       </div>
