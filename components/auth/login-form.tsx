@@ -19,6 +19,8 @@ import {
 import { Input } from "@/components/ui/input"
 import CardWrapper from '@/components/auth/card-wrapper'
 import { Button } from '@/components/ui/button'
+import FormError from '@/components/form-error'
+import FormSuccess from '@/components/form-success'
 
 export default function LoginForm() {
   const form = useForm<z.infer<typeof LoginSchema>>({
@@ -28,6 +30,11 @@ export default function LoginForm() {
       password: '',
     },
   })
+
+  const onSubmit = (values: z.infer<typeof LoginSchema>) => {
+    console.log(values)
+  }
+
   return (
     <CardWrapper
       headerLabel="Welcome back"
@@ -37,9 +44,9 @@ export default function LoginForm() {
     >
       <Form {...form}>
         <form 
-          onSubmit={form.handleSubmit(() => {})}
+          onSubmit={form.handleSubmit(onSubmit)}
           className='space-y-6'
-          >
+        >
           <div className='space-y-4'>
             <FormField 
               control={form.control}
@@ -76,6 +83,8 @@ export default function LoginForm() {
                 )}
             />
           </div>
+          <FormError />
+          <FormSuccess />
           <Button
             type='submit'
             className='w-full'
