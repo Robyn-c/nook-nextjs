@@ -32,7 +32,7 @@ export default function SidebarRoutes() {
   ]
 
   return (
-    <nav className="flex flex-col text-2xl item font-medium gap-6">
+    <nav className="flex flex-col text-2xl font-medium gap-6">
       {routes.map((route) => (
         <SidebarItem
           key={route.href}

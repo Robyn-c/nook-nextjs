@@ -17,7 +17,7 @@ export default function SidebarItem({
   active
 } : SidebarItemProps) {
   return (
-    <Link className={cn("flex items-center gap-4" , active ? "text-accent" : "text-white")} href={href}>
+    <Link className={cn("flex items-center gap-4" , active ? "text-accent-400" : "text-white")} href={href}>
       <Icon />
       {label}
     </Link>
